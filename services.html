@@ -3,12 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Services - Nirvana Vella</title>
-        <link rel="stylesheet" href="style/home.css">
+        <meta name="description" content="Nirvana Vella's portfolio showcasing graphic design, and game design>">
+        <title>Home - Nirvana Vella</title>
+        <link rel="stylesheet" href="style/services.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <body style="background-color: #D8D2E1;;">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+        <header>
+          <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="home.html">Nirvana Vella - Portfolio</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +33,6 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Game Design</a></li>
                       <li><a class="dropdown-item" href="#">Graphic Design</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Website Development</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -40,29 +42,38 @@
               </div>
             </div>
           </nav>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+        </header>
+
+        <section id="services" class="my-5">
+          <!--First card within container for Game Design-->
+          <div class="container">
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-6 col-md-12">
+                <div class="card" style="width: 35rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Game Design</h5>
+                    <p class="card-text">From level design to prototyping — get immersive, well-structured gameplay with creative mechanics and polish.</p>
+                    <a href="gameDesign.html" class="customizedButtons">Game Design Service</a>
+                  </div>
+              </div>
+            </div>
+
+            <!--Second Card for Graphic Design-->
+            <div class="col-lg-6 col-md-12">
+              <div class="card" style="width: 35rem;">
+                <img src="images/graphicDesignImg1.jpg" class="card-img-top" alt="Graphic_Design_Img">
+                <div class="card-body">
+                  <h5 class="card-title">Graphic Design</h5>
+                  <p class="card-text">This is the Graphic Design Service Card. Depending on the service you will need the prices and time will vary according to how big of a project it is. Check out some of the projects down below!</p>
+                  <a href="graphicDesign.html" class="customizedButtons">Graphic Design Service</a>
+                </div>
+              </div>
+            </div>
+              
+              </div>
             </div>
           </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
+        </section>
     </body>
 </html>
