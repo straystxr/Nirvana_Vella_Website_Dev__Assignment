@@ -3,39 +3,123 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nirvana Vella's portfolio showcasing graphic design, and game design>">
         <title>Home - Nirvana Vella</title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="style/home.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  </head>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body style="background-color: #D8D2E1;;">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
         <header>
-            Nirvana Vella Porfolio
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="home.html">Nirvana Vella - Portfolio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Game Design</a></li>
+                      <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         </header>
-        <nav class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1>Welcome to My Portfolio</h1>
-            <p>Game Designer - Graphic Designer - Web Developer</p>
-        </main>
+        
+        <div class="container-fluid">
+          <div class="row" id="mainContent">
+              <main class="hero text-center">
+                <div class="container">
+                  <h1>Design. Develop. Create.</h1>
+                  <p>I’m Nirvana Vella — passionate about turning ideas into interactive experiences.</p>
+                  <a href="contact.html" class="customizedButtons">Get in Touch</a>
+                </div>
+              </main>
+          </div>
+        </div>
+
+        <section id="aboutMe" class="my-5">
+          <div class="container">
+            <div class="card shadow-lg p-4 border-0 rounded-4" style="background-color: #240B36;">
+              <div class="card-body">
+                <h2 class="card-title text-center text-light mb-4" style="text-decoration: underline white;">About Me</h2>
+                <p class="card-text text-light">
+                  I am a passionate designer and developer with a keen interest in creating engaging user experiences. My journey in design and development has equipped me with the skills to bring ideas to life through innovative solutions.
+                </p>
+                <p class="card-text text-light">
+                  With a background in graphic design and game design, I strive to blend creativity with functionality in all my projects. I believe that great design is not just about aesthetics, but also about solving problems and enhancing user experience.
+                </p>
+              </div>
+              <div class="card-footer text-center">
+                <a href="about.html" class="customizedButtons">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Services section including snippets of game design and graphic design projects, clcking onto the title will direct you to the pages-->
         <aside>
-            <h2>Education</h2>
-            <h3>2024 - Current:</h3>
-                <p> Bachelor of Science in Interactive Media Development</p>
-            <h3>March 2024 - December 2024: </h3>
-                <p>VET Award for Graphic Designer Associate with Adobe Creative Suite</p>
-            <h3>2021 - 2023:</h3> 
-                <p>Diploma in Multimedia Software Development</p> 
+          <h2>
+            <a href="services.html" id="servicesTitle" style="text-decoration: underline white;">Services </a>
+          </h2>
+            <div id="carouselCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/gameDesignImg1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carouselText">
+                      <a href="gameDesign.html" class="carousel-link">Game Design</a>
+                    </h5>
+                    <p class="carouselText">An example of game logic and designing game mechanics</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images/graphicDesignImg1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carouselText">
+                      <a href="graphicDesign.html" class="carousel-link">Graphic Design</a>
+                    </h5>
+                    <p class="carouselText">An example of my graphic design banner for a school project</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </aside>
+        
+
+        <footer>
+          <p>&copy; 2025 Nirvana Vella. All rights reserved.</p>
+      </footer>
     </body>
-    <footer>
-        <p>&copy; 2025 Nirvana Vella. All rights reserved.</p>
-    </footer>
+
 </html>
