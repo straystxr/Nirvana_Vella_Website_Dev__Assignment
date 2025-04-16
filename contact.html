@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Nirvana Vella's portfolio showcasing graphic design, and game design>">
         <title>Home - Nirvana Vella</title>
-        <link rel="stylesheet" href="style/home.css">
+        <link rel="stylesheet" href="style/contact.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
@@ -31,8 +31,8 @@
                         Services
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Game Design</a></li>
-                      <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                      <li><a class="dropdown-item" href="gameDesign.html">Game Design</a></li>
+                      <li><a class="dropdown-item" href="graphicDesign.html">Graphic Design</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
@@ -43,5 +43,73 @@
             </div>
           </nav>
         </header>
+
+        <section id="contact" class="my-5">
+            <div class="container">
+              <div class="card" style="background-color: #240B36; color:white; border-radius: 30px;"> 
+                <div class="card-body">
+                  <form action="malito:asdf@blabla.com" method="post" enctype="text/plain" width="100%">
+                    <fieldset>
+                      <div id="personalInfo">
+                        <legend style="width: 250px; background-color: #d81e58; border-radius: 30px; text-align: center; margin: 5px;">Personal Information</legend>
+                        <div>
+                            <label for="firstName">First Name:</label>
+                            <input id="firstName" type="text" placeholder="Enter your name">
+                            <br>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name:</label>
+                            <input id="lastName" type="text" placeholder="Enter your last name">
+                            <br>
+                        </div>  
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend style="width: 250px; background-color: #d81e58; border-radius: 30px; text-align: center; margin: 5px;">Contact Information</legend>
+                        <div>
+                            <label for="phone">Phone:</label>
+                            <input id="phone" type="tel" placeholder="Enter your phone number" pattern="[0-9]{4} [0-9]{4}">
+                            <br>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" placeholder="Enter your email">
+                            <br>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend style="width: 250px; background-color: #d81e58; border-radius: 30px; text-align: center; margin: 5px;">Message Details</legend>
+                        <div>
+                            <label for="department">Services:</label>
+                            <select name="department" id="department">
+                                <option value="1" disabled>Please Select Servcie</option>
+                                <option value="2">Game Design Service</option>
+                                <option value="3">Graphic Design Service</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="subject">Subject:</label>
+                            <input id="subject" type="text" placeholder="Enter the subject">
+                            <br>
+                        </div>
+        
+                        <div>
+                            <label for="message">Message: </label>
+                            <br>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <button type="submit" id="submitButton">Submit</button>
+                        <button type="reset" id="resetButton">Reset</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </section>
+        <footer>
+          <p>&copy; 2025 Nirvana Vella. All rights reserved.</p>
+      </footer>
     </body>
 </html>

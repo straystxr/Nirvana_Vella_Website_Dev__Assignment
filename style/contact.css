@@ -46,18 +46,8 @@ header {
     color: black !important;
 }
 
-.hero {
-    background: url('../images/purpleHeroSection.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 100px 20px;
-    color: white;
-    position: relative;
-    text-shadow: #240B36 0px 0px 10px;
-}
-  
-main, aside {
-    background-color: #D8D2E1;
-    padding: 1rem;
+.card{
+    width: 100%;
 }
 
 .customizedButtons {
@@ -78,39 +68,6 @@ main, aside {
     text-decoration: none;
 }
 
-.carousel-item img {
-    height: 400px;
-    object-fit: cover;
-    width: 100%;
-}
-
-.carouselText a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-  
-.carouselText a:hover {
-    color: #d81e58;
-    text-decoration: underline;
-}
-#aboutMe{
-    background-color: #D8D2E1;
-    padding: 20px;
-    text-align: center;
-}
-#servicesTitle{
-    list-style-type: none !important;
-    text-decoration: none !important;
-    color: black;
-    text-align: center;
-    display: block;
-}
-
-#servicesTitle:hover{
-    color: #d81e58;
-}
 
 footer {
     width: 100%;
