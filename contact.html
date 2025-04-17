@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Nirvana Vella's portfolio showcasing graphic design, and game design>">
-        <title>Home - Nirvana Vella</title>
+        <title>Contact - Nirvana Vella</title>
         <link rel="stylesheet" href="style/contact.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -44,11 +44,12 @@
           </nav>
         </header>
 
+        <!--Section with all the form details like name,surname, phone number, email etc-->
         <section id="contact" class="my-5">
             <div class="container">
               <div class="card" style="background-color: #240B36; color:white; border-radius: 30px;"> 
                 <div class="card-body">
-                  <form action="malito:asdf@blabla.com" method="post" enctype="text/plain" width="100%">
+                  <form action="mailto:nirvana.vella102@gmail.com" method="post" enctype="text/plain" width="100%">
                     <fieldset>
                       <div id="personalInfo">
                         <legend style="width: 250px; background-color: #d81e58; border-radius: 30px; text-align: center; margin: 5px;">Personal Information</legend>
@@ -82,7 +83,7 @@
                         <div>
                             <label for="department">Services:</label>
                             <select name="department" id="department">
-                                <option value="1" disabled>Please Select Servcie</option>
+                                <option value="1" disabled>Please Select Service</option>
                                 <option value="2">Game Design</option>
                                 <option value="3">Graphic Design</option>
                             </select>
@@ -111,5 +112,7 @@
         <footer>
           <p>&copy; 2025 Nirvana Vella. All rights reserved.</p>
       </footer>
+      <!--loading form validation code at the end because it wasn't working in the beginning as there is nothing to check-->
+      <script src="contact.js"></script>
     </body>
 </html>

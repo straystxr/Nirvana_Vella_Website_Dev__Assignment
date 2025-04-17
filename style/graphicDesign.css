@@ -19,7 +19,7 @@ header {
     text-align: center;
     color: #D8D2E1;
 }
-/*nav bar styling same as previous pages*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,55 +46,28 @@ header {
     color: black !important;
 }
 
-/*contact styling to make it look more appealing*/
-#contact .container {
-    max-width: 800px;
-    margin: auto;
-}
-  
-.card {
-    background-color: #240B36;
-    color: white;
-    padding: 30px;
-    border-radius: 20px;
+.card{
+    width: 30%;
 }
 
-fieldset {
-    border: none;
-    margin-bottom: 20px;
-}
-/*making the titles aka the legends stand out*/ 
-legend {
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px 15px;
-    background-color: #d81e58;
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-    width: fit-content;
-    margin-bottom: 15px;
-}
-  
-/* same styling for all to keep consistency*/
-input, textarea, select {
+/* Making the images scale appropiately by using the object-fit contain features for the carousel images */
+.carousel-item img{
+    object-fit: contain;
     width: 100%;
-    padding: 10px 15px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: white;
-    color: #333;
+    height: 650px;
 }
 
-/* when clicked the inputs, textareas and selects will have a different border color to make it more appealing*/
-input:focus, textarea:focus, select:focus {
-    border: 2px solid #d81e58;
-    outline: none;
+.carouselTitle{
+    text-decoration: none;
+    color: white;
+}
+.carousel-caption{
+    background-color: #d81e58;
+    opacity: 0.85;
+    border-radius: 25px;
 }
 
-/*buttons classes same as other pages*/
+
 .customizedButtons {
     background-color: #d81e58;
     color: white;
